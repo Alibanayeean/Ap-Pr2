@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="825.0" prefWidth="1316.0" style="-fx-background-image: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherController.EducationalAssistant.EducationalAssistant_ShowWeeklySchedule">
+    <children>
+        <Button fx:id="HomeButton" layoutX="1175.0" mnemonicParsing="false" onAction="#HomeButtonFunction" prefHeight="33.0" prefWidth="46.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <ColorPicker fx:id="colorPicker" layoutX="1221.0" onAction="#ChangingColor" prefHeight="42.0" prefWidth="117.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ColorPicker>
+        <Label fx:id="timeShowLabel" layoutX="933.0" prefHeight="42.0" prefWidth="242.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="LogOutButton" layoutX="1281.0" layoutY="778.0" mnemonicParsing="false" onAction="#LogOutFunction" prefHeight="47.0" prefWidth="57.0" style="-fx-background-color: #FC0216;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Pane fx:id="pane" layoutX="84.0" layoutY="97.0" prefHeight="676.0" prefWidth="1150.0">
+            <children>
+                <Line endX="-100.0" endY="609.0" layoutX="265.0" layoutY="67.0" startX="-100.0" startY="-67.0" stroke="#b5a6a6" />
+                <Line endX="-100.0" endY="609.0" layoutX="430.0" layoutY="67.0" startX="-100.0" startY="-67.0" stroke="#b5a6a6" />
+                <Line endX="-100.0" endY="609.0" layoutX="595.0" layoutY="67.0" startX="-100.0" startY="-67.0" stroke="#b5a6a6" />
+                <Line endX="-100.0" endY="609.0" layoutX="760.0" layoutY="67.0" startX="-100.0" startY="-67.0" stroke="#b5a6a6" />
+                <Line endX="-100.0" endY="609.0" layoutX="925.0" layoutY="67.0" startX="-100.0" startY="-67.0" stroke="#b5a6a6" />
+                <Line endX="-100.0" endY="609.0" layoutX="1090.0" layoutY="67.0" startX="-100.0" startY="-67.0" stroke="#b5a6a6" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="52.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="104.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="156.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="208.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="260.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="312.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="364.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="416.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="468.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="520.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="572.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="624.0" startX="-100.0" />
+                <Line endX="1055.0" layoutX="100.0" layoutY="676.0" startX="-100.0" />
+                <Label alignment="CENTER" layoutX="990.0" layoutY="-2.0" prefHeight="54.0" prefWidth="165.0" text="Saturday" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="825.0" layoutY="-2.0" prefHeight="54.0" prefWidth="165.0" text="Sunday" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="660.0" layoutY="-2.0" prefHeight="54.0" prefWidth="165.0" text="Monday" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="495.0" layoutY="-2.0" prefHeight="54.0" prefWidth="165.0" text="Tuesday" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="330.0" layoutY="-2.0" prefHeight="54.0" prefWidth="165.0" text="Wednesday" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="165.0" layoutY="-2.0" prefHeight="54.0" prefWidth="165.0" text="Thursday" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutY="-2.0" prefHeight="54.0" prefWidth="165.0" text="Friday" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Label alignment="CENTER" layoutX="53.0" layoutY="126.0" prefHeight="42.0" prefWidth="31.0" text="7" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="179.0" prefHeight="42.0" prefWidth="31.0" text="8" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="231.0" prefHeight="42.0" prefWidth="31.0" text="9" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="284.0" prefHeight="42.0" prefWidth="31.0" text="10" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="335.0" prefHeight="42.0" prefWidth="31.0" text="11" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="387.0" prefHeight="42.0" prefWidth="31.0" text="12" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="440.0" prefHeight="42.0" prefWidth="31.0" text="13" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="491.0" prefHeight="42.0" prefWidth="31.0" text="14" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="543.0" prefHeight="42.0" prefWidth="31.0" text="15" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="596.0" prefHeight="42.0" prefWidth="31.0" text="16" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="646.0" prefHeight="42.0" prefWidth="31.0" text="17" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="700.0" prefHeight="42.0" prefWidth="31.0" text="18" textAlignment="CENTER" />
+        <Label alignment="CENTER" layoutX="53.0" layoutY="750.0" prefHeight="42.0" prefWidth="31.0" text="19" textAlignment="CENTER" />
+      <MenuBar fx:id="MenuBar" prefHeight="42.0" prefWidth="934.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Registration matters">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#CoursesListMenuFunction" text="Courses list" />
+                  <MenuItem mnemonicParsing="false" onAction="#TeacherListMenuFunction" text="Teachers list" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Educational services">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ScheduleFunction" text="Schedule" />
+                  <MenuItem mnemonicParsing="false" onAction="#ExamFunction" text="Exmas" />
+                  <MenuItem mnemonicParsing="false" onAction="#MinorFunction" text="Minor" />
+                  <MenuItem mnemonicParsing="false" onAction="#WithdrawalFromEducationFunction" text="Withdrawal from education" />
+                  <MenuItem mnemonicParsing="false" onAction="#RecommendationFunction" text="Recommendation" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Record works">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#temporaryScoresFunction" text="Temporary scores" />
+                  <MenuItem mnemonicParsing="false" onAction="#temporaryScoresAllStudentsFunction" text="Temporary scores for all students" />
+                  <MenuItem mnemonicParsing="false" onAction="#StatusFunction" text="Students status" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Profile">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ProfileFunction" text="profile" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="New user">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddNewUserFunction" text="Add new user" />
+               </items>
+            </Menu>
+         </menus>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuBar>
+      <ImageView fx:id="connectionStatus" fitHeight="42.0" fitWidth="149.0" layoutX="7.0" layoutY="784.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="reconnectionButton" layoutX="1.0" layoutY="771.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="68.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

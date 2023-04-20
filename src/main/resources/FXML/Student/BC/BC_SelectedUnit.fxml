@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="825.0" prefWidth="1316.0" style="-fx-background-image: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentController.BC.BC_SelectedUnit">
+    <children>
+        <Button fx:id="HomeButton" layoutX="1175.0" mnemonicParsing="false" onAction="#HomeButtonFunction" prefHeight="33.0" prefWidth="46.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <ColorPicker fx:id="colorPicker" layoutX="1221.0" onAction="#ChangingColor" prefHeight="42.0" prefWidth="117.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></ColorPicker>
+        <Label fx:id="timeShowLabel" layoutX="933.0" prefHeight="42.0" prefWidth="242.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Line endX="1231.0" layoutX="105.0" layoutY="287.0" startX="-100.0" />
+        <Label layoutX="14.0" layoutY="230.0" prefHeight="57.0" prefWidth="65.0" text="Name">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="380.0" layoutY="230.0" prefHeight="57.0" prefWidth="65.0" text="Units">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="663.0" layoutY="230.0" prefHeight="57.0" prefWidth="57.0" text="Grade">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="762.0" layoutY="230.0" prefHeight="57.0" prefWidth="26.0" text="Id">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="849.0" layoutY="230.0" prefHeight="57.0" prefWidth="76.0" text="Teacher">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <ScrollPane layoutX="-1.0" layoutY="288.0" prefHeight="536.0" prefWidth="1338.0">
+            <content>
+                <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="536.0" prefWidth="1333.0">
+               <children>
+                  <Label layoutX="1030.0" layoutY="14.0" prefHeight="57.0" prefWidth="46.0" text="Units">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="WAIT" />
+                     </cursor>
+                  </Label>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+        <MenuBar fx:id="MenuBar" prefHeight="42.0" prefWidth="934.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Registration matters">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#CoursesListMenuFunction" text="Courses list" />
+                        <MenuItem mnemonicParsing="false" onAction="#TeacherListMenuFunction" text="Teachers list" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Educational services">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#ScheduleFunction" text="Schedule" />
+                        <MenuItem mnemonicParsing="false" onAction="#ExamFunction" text="Exmas" />
+                        <MenuItem mnemonicParsing="false" onAction="#certificateStudentFunction" text="Certificate student" />
+                        <MenuItem mnemonicParsing="false" onAction="#MinorFunction" text="Minor" />
+                        <MenuItem mnemonicParsing="false" onAction="#WithdrawalFromEducationFunction" text="Withdrawal from education" />
+                        <MenuItem mnemonicParsing="false" onAction="#RecommendationFunction" text="Recommendation" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Record works">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#temporaryScoresFunction" text="Temporary scores" />
+                        <MenuItem mnemonicParsing="false" onAction="#StatusFunction" text="Status" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Profile">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#ProfileFunction" text="profile" />
+                    </items>
+                </Menu>
+            </menus>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </MenuBar>
+        <Button fx:id="LogOutButton" layoutX="1280.0" layoutY="241.0" mnemonicParsing="false" onAction="#LogOutFunction" prefHeight="47.0" prefWidth="57.0" style="-fx-background-color: #FC0216;">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <ImageView fx:id="connectionStatus" fitHeight="42.0" fitWidth="149.0" layoutX="7.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="reconnectionButton" layoutX="1.0" layoutY="43.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="68.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Label layoutX="508.0" layoutY="230.0" prefHeight="57.0" prefWidth="68.0" text="Group">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="suggestedRadioButton" layoutX="474.0" layoutY="105.0" mnemonicParsing="false" onAction="#suggestedRadioButtonFunction" prefHeight="42.0" prefWidth="156.0" text="suggested">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton fx:id="fromCollegeRadioButton" layoutX="725.0" layoutY="105.0" mnemonicParsing="false" onAction="#fromCollegeRadioButtonFunction" prefHeight="42.0" prefWidth="156.0" text="from college">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <CheckBox fx:id="neshanShodeChoiceBox" layoutX="1159.0" layoutY="264.0" mnemonicParsing="false" onAction="#neshanShodeFunction" text="Marked">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></CheckBox>
+      <CheckBox fx:id="allCourses" layoutX="1159.0" layoutY="246.0" mnemonicParsing="false" onAction="#allCoursesFunction" text="All Courses">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></CheckBox>
+      <Label layoutX="225.0" layoutY="230.0" prefHeight="57.0" prefWidth="65.0" text="Exam">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1030.0" layoutY="230.0" prefHeight="57.0" prefWidth="76.0" text="Capacity">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBoxForCollege" layoutX="925.0" layoutY="111.0" prefHeight="31.0" prefWidth="204.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+    </children>
+</AnchorPane>

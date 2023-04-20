@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="765.0" prefWidth="1341.0" style="-fx-background-image: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentController.CW.TA.TA_CW_CoursePage_SendText">
+    <children>
+        <Button fx:id="HomeButton" layoutX="1105.0" mnemonicParsing="false" onAction="#HomeButtonFunction" prefHeight="33.0" prefWidth="46.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <ColorPicker fx:id="colorPicker" layoutX="1158.0" onAction="#ChangingColor" prefHeight="42.0" prefWidth="117.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></ColorPicker>
+        <Button fx:id="LogOutButton" layoutX="1277.0" mnemonicParsing="false" onAction="#LogOutFunction" prefHeight="47.0" prefWidth="57.0" style="-fx-background-color: #FC0216;">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <ImageView fx:id="connectionStatus" fitHeight="42.0" fitWidth="149.0" layoutX="6.0" layoutY="722.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="reconnectionButton" layoutY="711.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="68.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="backButton" layoutX="6.0" layoutY="-2.0" mnemonicParsing="false" onAction="#backButtonFunction" prefHeight="31.0" prefWidth="46.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="downloadButton" layoutX="1.0" layoutY="42.0" mnemonicParsing="false" onAction="#downloadButtonFunction" prefHeight="42.0" prefWidth="133.0" text="Download">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <ScrollPane layoutY="183.0" prefHeight="525.0" prefWidth="1335.0">
+            <content>
+                <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="504.0" prefWidth="1334.0" />
+            </content>
+        </ScrollPane>
+        <Label layoutX="6.0" layoutY="153.0" prefHeight="30.0" prefWidth="110.0" text="Name">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="586.0" layoutY="153.0" prefHeight="30.0" prefWidth="110.0" text="Answer">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="800.0" layoutY="153.0" prefHeight="30.0" prefWidth="68.0" text="Score">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="242.0" layoutY="153.0" prefHeight="30.0" prefWidth="175.0" text="Student number">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="submitButton" layoutX="1269.0" layoutY="153.0" mnemonicParsing="false" onAction="#submitFunction" text="submit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+            <Label layoutX="1050.0" layoutY="145.0" prefHeight="50.0" prefWidth="100.0" text="Time">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Label>
+      <ChoiceBox fx:id="choiceBoxFileType" layoutX="342.0" layoutY="65.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <TextArea fx:id="textAreaForAnswer" layoutX="566.0" layoutY="16.0" prefHeight="132.0" prefWidth="285.0" />
+      <Button fx:id="submitForAnswer" layoutX="904.0" layoutY="65.0" mnemonicParsing="false" onAction="#submitForAnswerFunction" prefHeight="33.0" prefWidth="110.0" text="Submit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

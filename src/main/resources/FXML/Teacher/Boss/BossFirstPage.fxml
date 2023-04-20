@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="828.0" prefWidth="1316.0" style="-fx-background-image: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherController.Boss.BossFirstPage">
+    <children>
+        <Pane fx:id="paneFilter" layoutX="1031.0" layoutY="1.0" prefHeight="838.0" prefWidth="308.0">
+            <children>
+                <Button fx:id="LogOutButton" layoutX="250.0" layoutY="790.0" mnemonicParsing="false" onAction="#LogOutFunction" prefHeight="47.0" prefWidth="57.0" style="-fx-background-color: #FC0216;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <ImageView fx:id="imageViewUser" fitHeight="200.0" fitWidth="200.0" layoutX="54.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="Status" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="230.0" prefHeight="64.0" prefWidth="294.0" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Firstname" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="294.0" prefHeight="64.0" prefWidth="294.0" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Lastname" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="358.0" prefHeight="64.0" prefWidth="294.0" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="emailLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="422.0" prefHeight="64.0" prefWidth="294.0" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lastLoginLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="502.0" prefHeight="90.0" prefWidth="294.0" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+              <Label fx:id="timeShowLabel" layoutX="17.0" layoutY="698.0" prefHeight="42.0" prefWidth="275.0">
+                  <font>
+                      <Font name="System Bold" size="20.0" />
+                  </font>
+              </Label>
+            </children></Pane>
+        <Line endX="-100.0" endY="837.0" layoutX="1131.0" layoutY="1.0" startX="-100.0" />
+        <Button fx:id="HomeButton" layoutX="861.0" mnemonicParsing="false" onAction="#HomeButtonFunction" prefHeight="33.0" prefWidth="46.0" />
+        <ColorPicker fx:id="colorPicker" layoutX="913.0" onAction="#ChangingColor" prefHeight="42.0" prefWidth="117.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ColorPicker>
+      <MenuBar fx:id="MenuBar" prefHeight="42.0" prefWidth="620.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Registration matters">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#CoursesListMenuFunction" text="Courses list" />
+                  <MenuItem mnemonicParsing="false" onAction="#TeacherListMenuFunction" text="Teachers list" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Educational services">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ScheduleFunction" text="Schedule" />
+                  <MenuItem mnemonicParsing="false" onAction="#ExamFunction" text="Exmas" />
+                  <MenuItem mnemonicParsing="false" onAction="#RecomeFunction" text="Recome" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Record works">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#temporaryScoresFunction" text="Temporary scores" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Profile">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ProfileFunction" text="profile" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="CW">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="cw" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Chat room">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#chatRoomFunction" text="chat room" />
+               </items>
+            </Menu>
+         </menus>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuBar>
+      <ImageView fx:id="connectionStatus" fitHeight="42.0" fitWidth="149.0" layoutX="7.0" layoutY="797.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="reconnectionButton" layoutX="1.0" layoutY="784.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="68.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="messageButton" layoutX="798.0" mnemonicParsing="false" onAction="#messageButtonFunction" prefHeight="31.0" prefWidth="46.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>
